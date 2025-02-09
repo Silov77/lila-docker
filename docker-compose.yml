@@ -78,8 +78,7 @@ services:
   nginx:
     image: nginx:1.27.3-alpine3.20-slim
     restart: unless-stopped
-    networks:
-      - lila-network
+    network_mode: host
     ports:
       - 8080:80
     volumes:
