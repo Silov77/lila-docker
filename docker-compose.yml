@@ -54,6 +54,8 @@ services:
       - ./repos/bbpPairings:/opt/bbpPairings
       - ./repos/scalachess:/scalachess
       - ./conf/lila.conf:/lila/conf/application.conf
+    ports:
+      - "8080:8080"
 
   lila_ws:
     build:
