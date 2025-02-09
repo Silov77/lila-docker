@@ -47,6 +47,8 @@ services:
       - MOCK_EMAIL=${MOCK_EMAIL:-true}
       - ENABLE_MONITORING=${ENABLE_MONITORING:-false}
       - ENABLE_RATE_LIMITING=${ENABLE_RATE_LIMITING:-true}
+    ports:
+      - "8080:8080"
     volumes:
       - ./repos/lila:/lila
       - ./repos/chessground:/chessground
