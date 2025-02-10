@@ -88,7 +88,7 @@ services:
       - ./repos/lifat:/lifat
       - ./nginx:/nginx
       - /dev/shm/nginx.sock:/dev/shm/nginx.sock
-      - /etc/letsencrypt/live/chessonetest.ru:/etc/letsencrypt/live/chessonetest.ru
+      - /etc/letsencrypt:/etc/letsencrypt
     depends_on:
       - lila
       - lila_ws
