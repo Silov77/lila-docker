@@ -88,6 +88,7 @@ services:
       - ./repos/lila/public:/lila/public
       - ./repos/lifat:/lifat
       - ./nginx:/nginx
+      - /etc/letsencrypt/live/chessonetest.ru:/etc/letsencrypt/live/chessonetest.ru
     depends_on:
       - lila
       - lila_ws
